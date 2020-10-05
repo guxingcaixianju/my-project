@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表格标签</title>
+</head>
+<body>
+    <!--表格用于展示数据,列表是用来布局的；
+        表格的基本语法：<table>
+        <tr>用于定义表格中的行，必须嵌套在表格之中
+            <td>用于定义单元格，必须嵌套在<tr>标签中</td>
+        </tr>
+
+    </table>是用于定义表格的标签 -->
+    <table>
+        <tr><td>姓名</td> <td>性别</td> <td>年龄</td></tr>
+        <tr> <td>alan</td> <td>male</td> <td>18</td></tr>
+        <tr> <td>wen</td> <td>female</td> <td>16</td></tr>
+    </table>
+</body>
+
+<h4>表头单元格th</h4>
+<!-- align属性是相对页面的对齐方式 
+border属性是加边框；cellpadding属性是单元格边缘与其内容之间的距离，默认是1像素；cellspacing属性是单元格之间的空白 ，默认是2个像素-->
+<table align="center" border="1" cellpadding="20" cellspacing="0">
+    <!-- thead是表头，tbody是表体 -->
+   <thead>
+    <tr><th>姓名</th> <th>性别</th> <th>年龄</th></tr>
+   </thead>
+   <tbody>
+    <tr> <td>alan</td> <td>male</td> <td>18</td></tr>
+    <tr> <td>wen</td> <td>female</td> <td>16</td></tr>
+   </tbody>
+</table>
+
+<h4>合并单元格</h4>
+<table width="500" height="249" border="1" cellspacing="0"> 
+    <tr>
+        <td ></td>
+        <td colspan="2"></td>
+       
+    </tr> 
+    <tr>
+        <td rowspan="2"></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+
+</html>
