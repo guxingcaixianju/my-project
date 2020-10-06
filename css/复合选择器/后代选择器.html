@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>后代选择器</title>
+    <!-- 后代选择器又称为包含选择器，可以选择父元素里面的子元素。 -->
+    <style>
+        ol li {
+            /* 当有孙子时，可以用 ol li a {}的形式，依次类推  即元素1 元素2 元素3...，其中元素1可以是任何的基础选择器*/
+            
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <!-- 如果我只想选择ol里面的li标签，怎么办？使用后代选择器 -->
+    <ol>
+        <li>我是ol的孩子</li>
+        <li>我是ol的孩子</li>
+        <li>我是ol的孩子</li>
+        <li>我是ol的孩子</li>
+    </ol>
+    <ul>
+        <li>我是ul的孩子</li>
+        <li>我是ul的孩子</li>
+        <li>我是ul的孩子</li>
+        <li>我是ul的孩子</li>
+    </ul>
+</body>
+</html>

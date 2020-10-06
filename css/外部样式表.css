@@ -1,0 +1,4 @@
+/* 这个css文件中只有样式，不需要style标签 */
+div {
+    color: pink;
+}

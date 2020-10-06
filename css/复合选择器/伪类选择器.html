@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伪类选择器</title>
+    <style>
+        /* 伪类选择器用于向某些选择器添加特殊的效果，比如给链接添加特殊效果，或选择器第一个，第n个元素。
+        伪类选择器书写最大的特点是用冒号（：）表示 */
+
+        /* 1）链接伪类 请按照下面的顺序书写*/
+        /* a:link 选择所有未被访问的链接
+        a:visited 选择所有已被访问过的链接
+        a:hover 选择鼠标指针位于其上的链接
+        a:active 选择活动链接（鼠标按下未弹起的链接） */
+        a:link {
+            color: #333333;
+            text-decoration: none;
+        }
+        /* a:visited {
+            color:yellow;
+        } */
+        a:hover {
+            color:violet;
+        }
+        a:active {
+            color:turquoise;
+        }
+
+        /* 2):focus伪类选择器 */
+        /* focus伪类选择器选择获得焦点的表单元素，焦点就是光标，一般情况下<input>类表单元素才能获取，因此这个选择器主要针对于表单元素来说。 */
+        input:focus {
+            background-color:turquoise;
+        }
+    </style>
+</head>
+<body>
+    <a href="#">小猪佩奇1</a>
+    <a href="#">落花与孤鹜</a>
+    <input type="text">
+    <input type="text">
+    <input type="text">
+</body>
+</html>

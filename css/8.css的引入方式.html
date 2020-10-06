@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css的引入方式</title>
+    <!-- 按照css样式书写的位置（或者引入的方式），css样式表可以分为三大类：
+    1.行内样式表（行内式）
+    2.内部样式表（嵌入式）
+    3.外部样式表（链接式） 核心是单独写到CSS文件中，之后把CSS文件引入到别的HTML页面中使用，适合样式比较多的情况，是开发中最常用的方式 -->
+
+    <!-- 一.内部样式表
+       是写到html页面内部，将所有的css代码抽取出来，单独放到一个<style>标签中。 -->
+    <style>
+        /* 内部样式表放在这里,在一个style标签里面，在head中，然后body部分可以调用 */
+    </style>
+    <!-- 三.外部样式表 -->
+    <link rel="stylesheet" href="外部样式表.css">
+</head>
+<body>
+    <div>
+        <p>青花瓷</p>
+        <!-- 二.行内样式表:修改样式比较简单时,可以直接在标签内部进行修改样式 -->
+        <P style="color: deeppink;">天青色等烟雨</P>
+        <p>而我在等你</p>
+        <p>炊烟袅袅升起</p>
+        <p>隔江千万里</p>
+    </div>
+
+</body>
+</html>

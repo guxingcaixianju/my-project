@@ -1,0 +1,45 @@
+<!-- 1.Emmet语法的前身是Zencoding，它使用缩写，来提高html/css的编写速度，Vscode内部已经集成该语法
+使用Emmet语法可以快速生成HTML结构语法和CSS样式语法 -->
+<!-- 1）使用某一标签*个数n即可生成n个该标签,如div*10可得到下面的效果：-->
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<!-- 2）父子关系的使用>生成，如ul>li可生成如下效果： -->
+<ul>
+    <li></li>
+</ul>
+<!-- 3)兄弟关系的使用+，如div+p可生成如下效果 -->
+<div></div>
+<p></p>
+<!-- 4)如果生成带有类名或者id名字的，直接写 标签.demo或者 标签.# two  -->
+<!--使用p.demo即可生成<p class="demo"></p> -->
+<!-- 使用p#demo即可生成<p class="" id="demo"></p> -->
+
+<!-- 5)p.demo$*5可生成如下效果的标签： -->
+<p class="demo1"></p>
+<p class="demo2"></p>
+<p class="demo3"></p>
+<p class="demo4"></p>
+<p class="demo5"></p>
+
+<!-- 6)标签{文字}*n即可生成n个标签，每个标签中都含有文字，效果如下： -->
+<div>this is nice</div>
+<div>this is nice</div>
+<div>this is nice</div>
+<div>this is nice</div>
+<div>this is nice</div>
+<!-- 7)使用div{$}*5即可生成如下的效果： -->
+<div>1</div>
+<div>2</div>
+<div>3</div>
+<div>4</div>
+<div>5</div>
+
+

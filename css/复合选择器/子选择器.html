@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>子选择器</title>
+    <style>
+        /* 子选择器使用> 则选择的是亲儿子 即元素1和元素2是父子关系 */
+        div>a {
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a href="#">我是亲儿子</a>
+        <p>
+            <a href="#">我是亲孙子</a>
+        </p>
+    </div>
+</body>
+</html>

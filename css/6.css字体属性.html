@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>字体属性</title>
+    <style>
+        h2 {
+            /* 利用font-famliy来设置字体 */
+            font-family: 微软雅黑;
+            /* 利用font-siza来设置字体的大小 */
+            font-size: large;
+            /* 利用font-weight来设置字体的粗细 ,有数字和bold，bolder等形式，实际开发中更倾向于用数字，400相当于nomal，700相当于bold*/
+            font-weight: bold;
+            /* 利用font-style属性来设置文字的样式 */
+            font-style: italic;
+        }
+        p {
+            /* 如果选择多种字体，则浏览器会从左往右检查，只要遇到存在的字体即执行，忽略后面未执行的字体 */
+            /* 下面的复合属性顺序是固定的，不能调换位置 */
+            /* font: font-style font-weight font-size/line-height font-family */
+            /* 字体大小和字体不能省略，其他可以省略 */
+            font: italic 400 16px 'Microsoft yahei' 
+        }
+    </style>
+</head>
+<body>
+    <h2>不能说的秘密</h2>
+    <p><em>最美的不是下雨天</en></p>
+    <p><em>是与你一起躲过雨的屋檐</em></p>
+    <P><em>周杰伦</em></P>
+</body>
+</html>

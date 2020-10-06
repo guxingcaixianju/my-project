@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>类选择器</title>
+    <!-- 类选择器可以选择同一标签子树下面的一个或者几个标签，进行美化修改，如下所示。 -->
+    <!-- 类选择器的口诀：样式点定义，结构类调用，一个或多个，开发最常用 -->
+    <style>
+        .red {
+            color: red;
+        }
+        .blue {
+            color: blue;
+        }
+        .pink {
+            color: pink;
+        }
+        .orange {
+            color: orange
+        }
+        .boxred {
+            width: 100px;
+            height: 100px;
+            background-color: orangered;
+        }
+        .boxblue {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            /* .boxred和.boxblue中均有width和height属性，可以采用多类型将相同的属性放在一个类中，其他不同的属性单独放置在类中 */
+        }
+        .font {
+            font-size: 44px;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="red">冰雨</li>
+        <li class="blue">夜曲</li>
+        <Li class="pink">发如雪</Li>
+        <Li class="orange">青花瓷</Li>
+    </ul>
+    <div class="boxred"></div>
+    <div class="boxblue"></div>
+    <div class="boxred"></div>
+    <!-- 多类名的使用方式 类名之间用空格隔开-->
+    <div class="blue font">周杰伦</div>
+</body>
+</html>
